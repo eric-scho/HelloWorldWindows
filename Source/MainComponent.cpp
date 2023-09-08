@@ -6,7 +6,7 @@ MainComponent::MainComponent()
     setSize (600, 400);
 }
 
-MainComponent::~MainComponent()
+MainComponent::~MainComponent() 
 {
 }
 
@@ -17,7 +17,7 @@ void MainComponent::paint (juce::Graphics& g)
     g.fillAll (getLookAndFeel().findColour (juce::ResizableWindow::backgroundColourId));
 
     g.setFont (juce::Font (32.0f));
-    g.setColour (juce::Colours::white);
+    g.setColour (juce::Colours::red);
     g.drawText ("Hello World!", getLocalBounds(), juce::Justification::centred, true);
 }
 
